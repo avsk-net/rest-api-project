@@ -26,8 +26,7 @@ jobs:
         context: .
         push: true
         tags: karavishek99/rest-api-project:${{ github.ref_name }}
-        build-args: |
-           API_VERSION=${{ github.ref_name }}
+
     - name: Deployment Done
       run: echo "Docker image pushed successfully!"
 
